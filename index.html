@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: 'PT Sans', sans-serif;
+            background: url(bg.jpg);
+        }
+
+        .slide{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            color: #fab303;
+            text-align: center;
+        }
+        .content {
+            position: relative;
+            top: 25%;
+        }
+        #first-slide .cursor {
+            width: 35px;
+            float: center;
+        }
+        #first-slide h1 {
+            font-size: 32px;
+        }
+        .main-text {
+            margin: 0;
+            padding: 1.2em;
+            font-size: 1.4em;
+        }
+        #first-slide {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.80);
+        }
+        #second-slide {
+            display: none;
+            background: #000;
+        }
+        #second-slide .content{
+            top: 0;
+            height: 100%;
+        }
+        .gallery-wrap {
+            position: relative;
+            /* height: 20%; */
+            max-width: 767px;
+            margin: 0 auto;
+            top: 20%;
+        }
+        .monet-gallery {
+            position: relative;
+            /* height: 100%; */
+            width: 100%;
+            opacity: 1;
+            transition: all .5s ease-in;
+        }
+        .gallery-wrap img {
+            position: absolute;
+            display: block;
+            width: 30%;
+            top: 0;
+            left: 5%;
+            height: auto;
+            z-index: 10;
+        }
+        .gallery-wrap img:nth-child(2) {
+            left: 25%;
+            z-index: 9;
+            transform: translateY(25%);
+        }
+        .gallery-wrap img:nth-child(3) {
+            left: 45%;
+            z-index: 8;
+        }
+        .gallery-wrap img:nth-child(4) {
+            left: 65%;
+            z-index: 7;
+            transform: translateY(25%);
+        }
+    /*Логотип*/
+    .logo{
+        position:absolute;
+        bottom: 0;
+        width:100%;
+        height: 30%;
+        padding-bottom: 25px;
+    }
+    .logo img{
+        position: relative;
+        display:inline-block;
+        /* width:150px; */
+        /* height: 140px; */
+        width: 100%;
+        margin-right: 20px;
+    }
+    .bottom-link {
+        display: inline-block;
+        width: 48%;
+    }
+    
+    /*кнопка*/
+    
+    .button{
+        position: relative;
+        /* height:2em; */
+        width: 48%;
+        padding:15px 10px;
+        /* margin:46px 40px 20px 40px; */
+        /* left: 15%; */
+        cursor:pointer;
+        display:inline-block;
+        color:#FFF;
+        font-size:1em;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        /* border:1px solid #eee; */
+        background: #ffcc00;
+        border-radius:4px;
+        line-height:2em;
+        border:1px solid #ffcc00;
+        text-decoration:none;
+        box-sizing: border-box;
+        -webkit-transition: all 0.3s linear;
+         -khtml-transition: all 0.3s linear;
+           -moz-transition: all 0.3s linear;
+             -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+        }
+        .button:hover{
+            background: #ff9900;
+            -webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+             -khtml-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+               -moz-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+                 -o-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+                    box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+        }
+        
+        @media only screen and (max-width : 1280px) {
+            .gallery-wrap {
+                top: 24%;
+            }
+            .wrapper {
+                top: 80%;
+            }
+            
+        }
+        @media only screen and (max-width : 640px) {
+            
+
+        }
+        /* Extra Small Devices, Phones */
+        @media only screen and (max-width : 480px) {
+            .main-text {
+                margin: 0;
+                padding: 1.2em;
+                font-size: .8em;
+            }
+            .gallery-wrap {
+                top: 27%;
+            }
+            /* .logo {
+                width: 100%;
+            }
+            .button {
+                margin: 46px 40px -107px 4px;
+                left: 0;
+            } */
+            .logo img {
+                margin-right: 0px;
+            }
+            #first-slide h1 {
+            font-size: 22px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="first-slide" class="slide">
+        <div class="content">
+            <h1 class="main-text">А вы когда-нибудь задумывались, почему 57% населения России предпочитает хранить сбережения в золоте!?</h1>
+            <img id="animcursor" class="cursor" src="cursor.png" alt="#" style="opacity: 1;">
+            
+            <span></span>
+        </div>
+    </div>
+    <div id="second-slide" class="slide">
+        <div class="content">
+            <p class="main-text">Во все времена золото было и остается лучшим вариантом сохранения и приумножения денег</p>
+            <div class="gallery-wrap">
+                <div id="monet-row-1" class="monet-gallery" style="opacity: 1;">
+                    <img src="1_(ЧМ_по_футб).png" alt="1 (ЧМ по футб)">
+                    <img src="2_(бизон).png" alt="2 (бизон)">
+                    <img src="3_(Николай).png" alt="3 (Николай)">
+                    <img src="4_(моника).png" alt="4 (моника)">
+                </div>
+                <div id="monet-row-2" class="monet-gallery" style="opacity: 0;">
+                    <img src="5_(год_собаки).png" alt="5 (год_собаки)">
+                    <img src="6_(победон).png" alt="6 (победон)">
+                    <img src="7_(кенгуру).png" alt="7 (кенгуру)">
+                    <img src="8_(КК).png" alt="8 (КК)">
+                </div>
+            </div>
+            <p class="main-text">В магазине «Золотой монетный дом» можно выгодно купить золотые, серебряные, платиновые монеты и слитки. </p>
+            <p class="main-text">Покупайте монеты онлайн даже находясь в пути! </p>
+            <span></span>
+                <div class="logo">
+                  <a href="#" class="button bottom-link">Купить</a>
+                  <a href="#" class="bottom-link"><img src="ЛОГОТИП.png" alt="LOGO"></a>
+                </div>
+        </div>
+    </div>
+    <script>
+        var slide1 = document.getElementById("first-slide");
+        var slide2 = document.getElementById("second-slide");
+        setTimeout(function() {
+            slide1.style.display = 'none';
+            slide2.style.display = 'block';
+        }, 7000);
+        slide1.onclick = function() {
+            slide1.style.display = 'none';
+            slide2.style.display = 'block';
+        }
+        var opacity = document.getElementById("monet-row-1").style.opacity;
+        setInterval(function() {            
+            if (opacity) {
+                opacity = 0;
+                document.getElementById("monet-row-1").style.opacity = 0;
+                document.getElementById("monet-row-2").style.opacity = 1;
+            } else {
+                opacity = 1;
+                document.getElementById("monet-row-1").style.opacity = 1;
+                document.getElementById("monet-row-2").style.opacity = 0;
+            }
+
+        }, 2000);
+        var opacity = document.getElementById("animcursor").style.opacity;
+        setInterval(function() {            
+            if (opacity) {
+                opacity = 0;
+                document.getElementById("animcursor").style.opacity = 0;
+                document.getElementById("animcursor").style.opacity = 1;
+            } else {
+                opacity = 1;
+                document.getElementById("animcursor").style.opacity = 1;
+                document.getElementById("animcursor").style.opacity = 0;
+            }
+
+        }, 500);
+
+    </script>
+</body>
+</html>
