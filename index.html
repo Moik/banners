@@ -94,7 +94,7 @@
         bottom: 0;
         width:100%;
         /* height: 30%; */
-        padding-bottom: 35px;
+        padding-bottom: 95px;
     }
     .logo img{
         width: 100%;
@@ -103,26 +103,21 @@
     }
     .bottom-link {
         display: inline-block;
-        width: 48%;
+        position: relative;
+        width: 50%;
         max-width: 200px;
         min-width: 130px;
     }
-
     .leftside {
         display:inline-block;
-        position: relative;
-        width: 48%;
+        width: 45%;
     }
     .rightside {
         display:inline-block;
-        position: relative;
-        width: 48%;
+        width: 45%;
     }
-    
     /*кнопка*/
-    
     .button{
-        
         padding:15px 10px;
         /* margin:46px 40px 20px 40px; */
         /* left: 15%; */
@@ -139,19 +134,14 @@
         text-decoration:none;
         box-sizing: border-box;
         vertical-align: bottom;
-        -webkit-transition: all 0.3s linear;
-         -khtml-transition: all 0.3s linear;
-           -moz-transition: all 0.3s linear;
-             -o-transition: all 0.3s linear;
-                transition: all 0.3s linear;
+        -webkit-transition: background 1.8s;
+         -khtml-transition: background 1.8s;
+           -moz-transition: background 1.8s;
+             -o-transition: background 1.8s;
+                transition: background 1.8s;
         }
         .button:hover{
             background: #ff9900;
-            -webkit-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-             -khtml-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-               -moz-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-                 -o-box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-                    box-shadow:rgba(0,0,0,0.7) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
         }
         
         @media only screen and (max-width : 1280px) {
@@ -164,32 +154,64 @@
             
         }
         @media only screen and (max-width : 640px) {
-            
-
+            .main-text {
+                font-size: 14px;
+            }
+    
         }
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
             .main-text {
-                margin: 0;
-                padding: 1.2em;
-                font-size: .8em;
+                font-size: 15px;
             }
             .gallery-wrap {
-                top: 27%;
-            }
-            /* .logo {
-                width: 100%;
-            }
-            .button {
-                margin: 46px 40px -107px 4px;
-                left: 0;
-            } */
-            .logo img {
-                margin-right: 0px;
+                top: 33%;
             }
             #first-slide h1 {
-            font-size: 22px;
+                font-size: 22px;
+            }
+            .logo {
+                padding-bottom: 90px;
+            }
         }
+
+        @media only screen and (max-height : 414px) {
+
+            .main-text {
+                font-size: 15px;
+                padding: .5em;
+            }
+            .main-text:nth-child(1) {
+                padding-top: 20px;
+            }
+            .monet-gallery {
+                width: 100%;
+            }
+            .gallery-wrap {
+                top: 26%;
+            }
+            .gallery-wrap img {
+                width: 15%;
+                margin-left: 160px;
+            }
+            .gallery-wrap img:nth-child(2) {
+                left: 15%;
+            }
+            .gallery-wrap img:nth-child(3) {
+                left: 25%;
+            }
+            .gallery-wrap img:nth-child(4) {
+                left: 35%;
+            }
+            .logo {
+                padding-bottom: 10px;
+            }
+
+        }
+        @media only screen and (max-height : 320px) {
+            .gallery-wrap img {
+                margin-left: 130px;
+            }
         }
     </style>
 </head>
