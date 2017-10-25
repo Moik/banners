@@ -134,6 +134,23 @@
             display: table;
             margin: 0 auto;
         }
+        .main-text4 {
+            font-family: 'Bebas Neue Bold', sans-serif;
+            font-weight: 800;
+            font-size: 48px;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #f3b502;
+            display: table;
+            margin: 0 auto;
+        }
+        .main-textsm1 {
+            font-family: 'Bebas Neue Book', sans-serif;
+            font-size: 26px;
+            color: #fff;
+        }
 
         #first-slide {
             position: relative;
@@ -204,7 +221,7 @@
         }
         .gallery-wrap img {
             position: absolute;
-            display: block;
+            display: inline-block;
             width: 20%;
             top: 0;
             left: 5%;
@@ -287,77 +304,27 @@
     }
         
         @media only screen and (max-width : 1280px) {
-            .gallery-wrap {
-                top: 24%;
-            }
-            .wrapper {
-                top: 80%;
-            }
+            
             
         }
         @media only screen and (max-width : 640px) {
-            .main-text {
-                font-size: 14px;
-            }
+            
     
         }
         /* Extra Small Devices, Phones */
         @media only screen and (max-width : 480px) {
-            .main-text {
-                font-size: 15px;
-            }
-            .gallery-wrap {
-                top: 33%;
-            }
-            #first-slide h1 {
-                font-size: 22px;
-            }
-            .logo {
-                padding-bottom: 90px;
-            }
+            
         }
         @media only screen and (max-height : 480px) {
-            .logo {
-                padding-bottom: 20px;
-            }
+           
         }
         @media only screen and (max-height : 414px) {
 
-            .main-text {
-                font-size: 15px;
-                padding: .5em;
-            }
-            .main-text:nth-child(1) {
-                padding-top: 20px;
-            }
-            .monet-gallery {
-                width: 100%;
-            }
-            .gallery-wrap {
-                top: 26%;
-            }
-            .gallery-wrap img {
-                width: 15%;
-                margin-left: 160px;
-            }
-            .gallery-wrap img:nth-child(2) {
-                left: 15%;
-            }
-            .gallery-wrap img:nth-child(3) {
-                left: 25%;
-            }
-            .gallery-wrap img:nth-child(4) {
-                left: 35%;
-            }
-            .logo {
-                padding-bottom: 10px;
-            }
+            
 
         }
         @media only screen and (max-height : 320px) {
-            .gallery-wrap img {
-                margin-left: 130px;
-            }
+            
         }
     </style>
 </head>
@@ -375,8 +342,10 @@
         </div>
     </div>
     <div id="second-slide" class="slide">
+        <div class="close"> </div>
         <div class="content">
-            <p class="main-text">Во все времена золото было и остается лучшим вариантом сохранения и приумножения денег</p>
+            <p class="main-text4">В магазине «Золотой монетный дом»</p>
+            <p class="main-textsm1">можно выгодно купить золотые, серебряные, платиновые монеты и слитки</p>
             <div class="gallery-wrap">
                 <div id="monet-row-1" class="monet-gallery">
                     <img src="1.png" alt="1">
