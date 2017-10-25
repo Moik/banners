@@ -7,15 +7,83 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <style>
         html, body {
+            position: relative;
             height: 100%;
             width: 100%;
             padding: 0;
             margin: 0;
             font-family: 'PT Sans', sans-serif;
-            background: url(bg.jpg);
+            /*background: url(bg.jpg) no-repeat;*/
+            
         }
+        
+        /*.bggold {
+            position: absolute;
+            bottom: 0;
+            height: 300px;
+            width: 100%;
+            background: url(bg.jpg) no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        } */
+        .cursor {
+            background: url(cursor.png) no-repeat;
+            width: 64px;
+            height: 112px;
+        }
+        .hvr-ripple-out {
+            padding-left: 70px;
+            }
+            @-webkit-keyframes hvr-ripple-out {
+              100% {
+                top: -22px;
+                right: -22px;
+                bottom: -22px;
+                left: -22px;
+                opacity: 0;
+              }
+            }
+            @keyframes hvr-ripple-out {
+              100% {
+                top: -22px;
+                right: -22px;
+                bottom: -22px;
+                left: -22px;
+                opacity: 0;
+              }
+            }
+            .hvr-ripple-out {
+              display: inline-block;
+              vertical-align: middle;
+              -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              -moz-osx-font-smoothing: grayscale;
+              position: relative;
+            }
+            .hvr-ripple-out:before {
+              content: '';
+              position: absolute;
+              border: #e6b111 solid 3px;
+              border-radius: 50%;
+              margin: -50px;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+              -webkit-animation-name: hvr-ripple-out;
+              animation-name: hvr-ripple-out;
+              animation-iteration-count: infinite;  
+            -webkit-animation-iteration-count: infinite;
+            }
+            
 
-        .slide{
+        .slide {
             position: relative;
             height: 100%;
             width: 100%;
@@ -26,67 +94,121 @@
             position: relative;
             top: 25%;
         }
-        #first-slide .cursor {
-            width: 35px;
-            float: center;
-        }
+        
         #first-slide h1 {
             font-size: 32px;
             /*font-weight: 600;*/
+            /*#f5b704 33%, #f6d04a 66%, #f6e27d);*/
         }
-        .main-text {
+        .main-text1 {
             margin: 0;
-            padding: 1.2em;
-            font-size: 1.4em;
+            padding: 10px;
+            font-size: 58px;
+            font-weight: 800;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            color: #f3b502;
+            display: table;
+            margin: 0 auto;
         }
+        .main-text2 {
+            padding: 10px;
+            font-size: 38px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #999;
+        }
+        .main-text3 {
+            padding: 10px;
+            font-size: 38px;
+            font-weight: 800;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #f3b502;
+            display: table;
+            margin: 0 auto;
+        }
+
         #first-slide {
+            position: relative;
             cursor: pointer;
             background: rgba(0, 0, 0, 0.80);
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
+        .close{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+        }
+        .close:before,
+        .close:after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 10px;
+            width: 26px;
+            height: 2px;
+            background: #999;
+        }
+        .close:before {
+            webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .close:after {
+            webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
         #second-slide {
             display: none;
             background: #000;
         }
         #second-slide .content{
-            top: 0;
+            top: 5%;
             height: 100%;
         }
         .gallery-wrap {
             position: relative;
-            /* height: 20%; */
+            height: 200px;
             max-width: 767px;
-            margin: 0 auto;
-            top: 20%;
+            margin: 20px;
         }
         .monet-gallery {
             position: relative;
-            /* height: 100%; */
+            height: 100%;
             width: 100%;
-            opacity: 1;
-            transition: all .5s ease-in;
+        }
+        #monet-row-1 {
+            position: relative;
+            left: 25%;
         }
         .gallery-wrap img {
             position: absolute;
             display: block;
-            width: 30%;
+            width: 20%;
             top: 0;
             left: 5%;
             height: auto;
-            z-index: 10;
         }
         .gallery-wrap img:nth-child(2) {
-            left: 25%;
-            z-index: 9;
-            transform: translateY(25%);
+            left: 30%;
         }
         .gallery-wrap img:nth-child(3) {
-            left: 45%;
-            z-index: 8;
+            left: 55%;
         }
         .gallery-wrap img:nth-child(4) {
-            left: 65%;
-            z-index: 7;
-            transform: translateY(25%);
+            left: 80%;
         }
     /*Логотип*/
     .logo{
@@ -232,28 +354,30 @@
 </head>
 <body>
     <div id="first-slide" class="slide">
+        <div class="close"> </div>
         <div class="content">
-            <h1 class="main-text">А вы когда-нибудь задумывались, почему 57% населения России предпочитает хранить сбережения в золоте!?</h1>
-            <img id="animcursor" class="cursor" src="cursor.png" alt="#" style="opacity: 1;">
+            <div class="main-text1">Почему</div>
+            <div class=main-text2>57% Россиян</div><div class="main-text3">хранят сбережения в золоте?</div>
+            
+            <div class="cursor hvr-ripple-out"></div>
             
             <span></span>
+
         </div>
     </div>
     <div id="second-slide" class="slide">
         <div class="content">
             <p class="main-text">Во все времена золото было и остается лучшим вариантом сохранения и приумножения денег</p>
             <div class="gallery-wrap">
-                <div id="monet-row-1" class="monet-gallery" style="opacity: 1;">
-                    <img src="1_(ЧМ_по_футб).png" alt="1 (ЧМ по футб)">
-                    <img src="2_(бизон).png" alt="2 (бизон)">
-                    <img src="3_(Николай).png" alt="3 (Николай)">
-                    <img src="4_(моника).png" alt="4 (моника)">
+                <div id="monet-row-1" class="monet-gallery">
+                    <img src="1.png" alt="1">
+                    <img src="2.png" alt="2">
                 </div>
-                <div id="monet-row-2" class="monet-gallery" style="opacity: 0;">
-                    <img src="5_(год_собаки).png" alt="5 (год_собаки)">
-                    <img src="6_(победон).png" alt="6 (победон)">
-                    <img src="7_(кенгуру).png" alt="7 (кенгуру)">
-                    <img src="8_(КК).png" alt="8 (КК)">
+                <div id="monet-row-2" class="monet-gallery">
+                    <img src="3.png" alt="3">
+                    <img src="4.png" alt="4">
+                    <img src="5.png" alt="5">
+                    <img src="6.png" alt="6">
                 </div>
             </div>
             <p class="main-text">В магазине «Золотой монетный дом» можно выгодно купить золотые, серебряные, платиновые монеты и слитки. </p>
@@ -278,7 +402,7 @@
         setTimeout(function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
-        }, 7000);
+        }, 700000000);
         slide1.onclick = function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
@@ -295,20 +419,7 @@
                 document.getElementById("monet-row-2").style.opacity = 0;
             }
 
-        }, 2000);
-        var opacity = document.getElementById("animcursor").style.opacity;
-        setInterval(function() {            
-            if (opacity) {
-                opacity = 0;
-                document.getElementById("animcursor").style.opacity = 0;
-                document.getElementById("animcursor").style.opacity = 1;
-            } else {
-                opacity = 1;
-                document.getElementById("animcursor").style.opacity = 1;
-                document.getElementById("animcursor").style.opacity = 0;
-            }
-
-        }, 500);
+        }, 2000000);
 
     </script>
 </body>
