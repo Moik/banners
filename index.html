@@ -29,12 +29,16 @@
             background-size: cover;
         } */
         .cursor {
+            position: relative;
             background: url(cursor.png) no-repeat;
-            width: 64px;
-            height: 112px;
+            background-size: contain;
+            background-position: center;
+            width: 11vh;
+            height: 11vh;
+            animation: move 1s ease-in-out 0.5s infinite;
+
         }
         .hvr-ripple-out {
-            padding-left: 70px;
             }
             @-webkit-keyframes hvr-ripple-out {
               100% {
@@ -65,7 +69,7 @@
               position: relative;
             }
             .hvr-ripple-out:before {
-              content: '';
+              /* content: '';
               position: absolute;
               border: #e6b111 solid 3px;
               border-radius: 50%;
@@ -73,13 +77,13 @@
               top: 0;
               right: 0;
               bottom: 0;
-              left: 0;
-              -webkit-animation-duration: 1s;
+              left: 0; */
+              /* -webkit-animation-duration: 1s;
               animation-duration: 1s;
               -webkit-animation-name: hvr-ripple-out;
               animation-name: hvr-ripple-out;
               animation-iteration-count: infinite;  
-            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite; */
             }
             
 
@@ -326,6 +330,77 @@
         @media only screen and (max-height : 320px) {
             
         }
+        .circle {
+            position: absolute;
+            top: -2vh;
+            left: -2vh;
+            width: 15vh;
+            height: 15vh;
+            border: 1px solid #e6b111;
+            border-radius: 50%;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;  
+        }
+        .circle:nth-child(2) {
+            animation-delay: 0.5s; 
+        }
+        .circle:nth-child(3) {
+            animation-delay: 1s; 
+        }
+        .circle:nth-child(4) {
+            animation-delay: 1.5s; 
+        }
+        @-webkit-keyframes pulse {
+            0% {
+                opacity: 0.5;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                opacity: 0.5;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        @-webkit-keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(2px);                
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(2px);                
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -335,7 +410,12 @@
             <div class="main-text1">Почему</div>
             <div class=main-text2>57% Россиян</div><div class="main-text3">хранят сбережения в золоте?</div>
             
-            <div class="cursor hvr-ripple-out"></div>
+            <div class="cursor hvr-ripple-out">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
             
             <span></span>
 
