@@ -168,7 +168,7 @@
         .main-text5 {
             font-family: 'Bebas Neue Bold', sans-serif;
             font-weight: 800;
-            font-size: 48px;
+            font-size: 42px;
             text-transform: uppercase;
             background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
             -webkit-background-clip: text;
@@ -305,8 +305,8 @@
         /* left: 15%; */
         cursor:pointer;
         color:#000;
-        font-size: 30px;
-        font-weight: 800;
+        font-size: 40px;
+        font-weight: 900;
         letter-spacing: 1.5px;
         /* border:1px solid #eee; */
         background: rgb(245, 174, 7);
@@ -315,7 +315,7 @@
         background: -ms-linear-gradient(359deg, rgb(245, 174, 7) 0%, rgb(255, 252, 121) 100%);
         background: linear-gradient(359deg, rgb(245, 174, 7) 0%, rgb(255, 252, 121) 100%);
         border-radius:4px;
-        line-height:2em;
+        line-height: 1.5em;
         border:1px solid #ffcc00;
         text-decoration:none;
         box-sizing: border-box;
@@ -351,32 +351,256 @@
     .basket img {
         max-width: 35px;
         max-height: 28px;
-    }
-        
-        @media only screen and (max-width : 1280px) {
-            
+    }   
+
+        @media only screen and (max-width : 1366px) {
             
         }
-        @media only screen and (max-width : 640px) {
-    
+
+        @media only screen and (max-height : 1366px) {
+            .main-text4 {
+                font-size: 60px;
+            }
+            .main-textsm1 {
+                font-size: 36px;
+            }
+            .gallery-wrap {
+                height: 210px;
+                max-width: none;
+            }
+            .main-textsm2 {
+                padding-top: 200px;
+            }
         }
-        @media only screen and (max-width : 768px) {
+        @media only screen and (max-width : 768px) and (max-height : 1024px) {
+            .main-text4 {
+                font-size: 50px;
+            }
+            .main-textsm1 {
+                font-size: 26px;
+            }
+            .gallery-wrap {
+                margin-left: 0 !important;
+            }
 
         }
-        /* Extra Small Devices, Phones */
-        @media only screen and (max-width : 480px) {
+        @media only screen and (max-height : 1024px) {
+            #first-slide {
+                background: url(bg.jpg) fixed;
+            }
+            .gallery-wrap {
+                max-width: 768px;
+                margin-left: 270px;
+                height: 170px;
+            }
+            #second-slide .content {
+                top: 10%;
+            }
+            .main-textsm2 {
+
+            }
             
         }
-        @media only screen and (max-height : 480px) {
-           
+        @media only screen and (max-height : 768px) {
+            .gallery-wrap {
+                margin-left: 116px;
+                max-width: 768px;
+                height: 160px;
+            }
+            .main-textsm2 {
+                padding-top: 160px;
+            }
+            #second-slide .content {
+                top: 5%;
+            }
+            .main-text4 {
+                font-size: 32px;
+            }
+            .main-textsm1 {
+                font-size: 22px;
+            }
+            .main-textsm2 {
+                font-size: 32px;
+            }
+            .main-text5 {
+                font-size: 32px;
+                padding-bottom: 0;
+            }
+            .logo {
+                padding-top: 0;
+            }
+
         }
         @media only screen and (max-height : 414px) {
-
-            
+            .content {
+                top: 10%;
+            }
+            #first-slide {
+                background: url(bg.jpg) 50% 60%;
+            }
+            .main-text3 {
+                padding-bottom: 60px;
+            }
+            .gallery-wrap {
+                margin-left: 200px !important;
+                width: 40%;
+                height: 60px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .main-textsm2 {
+                padding-top: 40px;
+                font-size: 22px;
+                margin-bottom: 0;
+            }
+            .main-text4 {
+                font-size: 26px;
+            }
+            .main-textsm1 {
+                font-size: 22px;
+                margin-bottom: 0;
+            }
+            .main-text5 {
+                font-size: 22px;
+                padding-bottom: 0;
+            }
+            .rightside {
+                width: 30%;
+            }
+            .button {
+                font-size: 30px;
+                padding: 0;
+            }
+            .bottom-link {
+                width: 40%;
+            }
+            .basket {
+                padding: 2px;
+            }
+        }
+        @media only screen and (max-width : 414px) {
+            .content {
+                top: 15%;
+            }
+            #first-slide {
+                background: url(bg.jpg) 50% 60%;
+            }
+            .main-text3 {
+                padding-bottom: 140px;
+            }
+            .main-text4 {
+                font-size: 24px;
+            }
+            .gallery-wrap {
+                right: 10px;
+                margin: 0;
+                width: 100%;
+                height: 90px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .main-textsm2 {
+                padding-top: 100px;
+            }
+            .button {
+                font-size: 30px;
+                padding: 0;
+                float: left;
+            }
+            .basket {
+                width: 30%;
+                padding: 3px;
+            }
+            .main-text5 {
+                padding-bottom: 50px;
+            }
+            .leftside {
+                width: 50%;
+            }
 
         }
+        @media only screen and (max-height : 375px) {
+            .content {
+                top: 10%;
+            }
+            #first-slide {
+                background: url(bg.jpg) 50% 60%;
+            }
+            .main-text3 {
+                padding-bottom: 40px;
+            }
+        }
+
+        @media only screen and (max-width : 375px) {
+            .content {
+                top: 15%;
+            }
+            #first-slide {
+                background: url(bg.jpg) 50% 70%;
+            }
+            .main-text3 {
+                padding-bottom: 50px;
+            }
+        }
+
         @media only screen and (max-height : 320px) {
-            
+            .content {
+                top: 5%;
+            }
+            .main-text3 {
+                padding-bottom: 15px;
+            }
+            #first-slide {
+                background: url(bg.jpg) 70% 60%;
+            }
+            .gallery-wrap {
+                margin-left: 164px !important;
+                height: 50px;
+            }
+            .main-textsm1 {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+            .main-textsm2 {
+                font-size: 18px;
+            }
+            .main-text5 {
+                font-size: 18px;
+            }
+        }
+        @media only screen and (max-width : 320px) {
+            .content {
+                top: 15%;
+            }
+            .main-text3 {
+                padding-bottom: 90px;
+            }
+            #first-slide {
+                background: url(bg.jpg) 50% 70%;
+            }
+            #second-slide .content {
+                top: 10%;
+            }
+            .main-textsm2 {
+                font-size: 22px;
+                padding-top: 60px;
+            }
+            .main-text5 {
+                padding-bottom: 15px;
+                font-size: 24px;
+            }
+            .button {
+                width: 40%;
+                font-size: 30px;
+                padding: 0;
+                float: left;
+                min-width: 116px;
+            }
+            .basket {
+                width: 25%;
+                padding: 3px;
+            }
+
         }
         .circle {
             position: absolute;
