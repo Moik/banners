@@ -99,15 +99,10 @@
             top: 25%;
         }
         
-        #first-slide h1 {
-            font-size: 32px;
-            /*font-weight: 600;*/
-            /*#f5b704 33%, #f6d04a 66%, #f6e27d);*/
-        }
         .main-text1 {
             margin: 0;
             padding: 10px;
-            font-size: 58px;
+            font-size: 74px;
             font-weight: 800;
             text-transform: uppercase;
             background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
@@ -120,7 +115,7 @@
         }
         .main-text2 {
             padding: 10px;
-            font-size: 38px;
+            font-size: 54px;
             font-weight: 800;
             text-transform: uppercase;
             color: #999;
@@ -128,7 +123,7 @@
         }
         .main-text3 {
             padding: 10px;
-            font-size: 38px;
+            font-size: 54px;
             font-weight: 800;
             text-transform: uppercase;
             background-image: linear-gradient(to right, #f6e27e 0%, #f5b600 100%);
@@ -137,7 +132,7 @@
             color: #f3b502;
             display: table;
             margin: 0 auto;
-            padding-bottom: 145px;
+            padding-bottom: 66px;
         }
         .main-text4 {
             font-family: 'Bebas Neue Bold', sans-serif;
@@ -353,10 +348,6 @@
         max-height: 28px;
     }   
 
-        @media only screen and (max-width : 1366px) {
-            
-        }
-
         @media only screen and (max-height : 1366px) {
             .main-text4 {
                 font-size: 60px;
@@ -374,13 +365,16 @@
         }
         @media only screen and (max-width : 768px) and (max-height : 1024px) {
             .main-text4 {
-                font-size: 50px;
+                font-size: 48px;
             }
             .main-textsm1 {
                 font-size: 26px;
             }
             .gallery-wrap {
                 margin-left: 0 !important;
+            }
+            .main-textsm2 {
+                font-size: 42px;
             }
 
         }
@@ -410,6 +404,10 @@
             .main-textsm2 {
                 padding-top: 160px;
             }
+            .formob {
+                width: 100%;
+                float: left;
+            }
             #second-slide .content {
                 top: 5%;
             }
@@ -417,7 +415,7 @@
                 font-size: 32px;
             }
             .main-textsm1 {
-                font-size: 22px;
+                font-size: 19px;
             }
             .main-textsm2 {
                 font-size: 32px;
@@ -434,6 +432,15 @@
         @media only screen and (max-height : 414px) {
             .content {
                 top: 10%;
+            }
+            .main-text1 {
+                font-size: 48px;
+            }
+            .main-text2 {
+                font-size: 32px;
+            }
+            .main-text3 {
+                font-size: 36px;
             }
             #first-slide {
                 background: url(bg.jpg) 50% 60%;
@@ -454,7 +461,7 @@
                 margin-bottom: 0;
             }
             .main-text4 {
-                font-size: 26px;
+                font-size: 25px;
             }
             .main-textsm1 {
                 font-size: 22px;
@@ -489,7 +496,7 @@
                 padding-bottom: 140px;
             }
             .main-text4 {
-                font-size: 24px;
+                font-size: 25px;
             }
             .gallery-wrap {
                 right: 10px;
@@ -509,7 +516,7 @@
             }
             .basket {
                 width: 30%;
-                padding: 3px;
+                padding: 6px;
             }
             .main-text5 {
                 padding-bottom: 50px;
@@ -517,7 +524,9 @@
             .leftside {
                 width: 50%;
             }
-
+            .basket img {
+                width: 50%;
+            }
         }
         @media only screen and (max-height : 375px) {
             .content {
@@ -529,6 +538,26 @@
             .main-text3 {
                 padding-bottom: 40px;
             }
+            .main-text1 {
+                font-size: 48px;
+            }
+            .main-text2 {
+                font-size: 32px;
+            }
+            .main-text3 {
+                font-size: 36px;
+            }
+            .formob {
+                float: none;
+            }
+            .basket {
+                width: 15%;
+                padding: 6px;
+            }
+            .basket img {
+                width: 60%;
+            }
+
         }
 
         @media only screen and (max-width : 375px) {
@@ -540,6 +569,15 @@
             }
             .main-text3 {
                 padding-bottom: 50px;
+            }
+            .main-text1 {
+                font-size: 48px;
+            }
+            .main-text2 {
+                font-size: 32px;
+            }
+            .main-text3 {
+                font-size: 36px;
             }
         }
 
@@ -572,6 +610,9 @@
             .content {
                 top: 15%;
             }
+            .formob {
+                float: none;
+            }
             .main-text3 {
                 padding-bottom: 90px;
             }
@@ -598,9 +639,8 @@
             }
             .basket {
                 width: 25%;
-                padding: 3px;
+                padding: 6px;
             }
-
         }
         .circle {
             position: absolute;
@@ -697,7 +737,7 @@
         <div class="close"> </div>
         <div class="content">
             <p class="main-text4">В магазине «Золотой монетный дом»</p>
-            <p class="main-textsm1">можно выгодно купить золотые, серебряные, платиновые монеты и слитки</p>
+            <p class="main-textsm1"><span class="formob">можно выгодно купить</span> золотые, серебряные, платиновые монеты и слитки</p>
             <div class="gallery-wrap">
                 <div id="monet-row-1" class="monet-gallery">
                     <img src="1.png" alt="1">
@@ -733,7 +773,7 @@
         setTimeout(function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
-        }, 700000000);
+        }, 7000);
         slide1.onclick = function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
