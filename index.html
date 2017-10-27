@@ -45,6 +45,7 @@
         .cursor {
             position: relative;
             display: inline-block;
+            margin-bottom: 70px;
             width: 11vh;
             height: 11vh;
             background: url(cursor.png) no-repeat;
@@ -55,14 +56,14 @@
 
         .slide {
             position: relative;
-            height: 100%;
+            min-height: 100%;
             width: 100%;
             color: #fab303;
             text-align: center;
         }
         .content {
             position: relative;
-            top: 21%;
+            padding-top: 21%;
         }
 
         .main-text1 {
@@ -114,6 +115,7 @@
             margin: 0 auto;
         }
         .main-textsm1 {
+            padding: 0 10px;
             font-family: 'Bebas Neue Book', sans-serif;
             font-size: 26px;
             color: #fff;
@@ -145,6 +147,7 @@
         #first-slide {
             position: relative;
             cursor: pointer;
+            height: 100%;
             background: rgba(0, 0, 0, 0.80);
             background-image: url(bg.jpg);
             background-repeat: no-repeat;
@@ -193,7 +196,8 @@
             background: linear-gradient(45deg, rgba(38,37,43,1) 0%,rgba(32,31,36,1) 54%,rgba(21,21,25,1) 95%,rgba(20,20,24,0.98) 100%);
         }
         #second-slide .content{
-            top: 15%;
+            padding-top: 15%;
+            padding-bottom: 20px;
             width: 100%;
             height: auto;
         }
@@ -223,7 +227,7 @@
         }
         /*Логотип*/
         .logo{
-        position:absolute;
+        /* position:absolute; */
         padding-top: 20px;
         width:100%;
         }
@@ -332,17 +336,16 @@
             .main-textsm2 {
                 font-size: 42px;
             }
-
+            #second-slide .content {
+                padding-top: 10%;
+            }
         }
         @media only screen and (max-height : 1024px) {
             .gallery-wrap {
                 max-width: 768px;
                 margin: 0 auto;
                 height: 170px;
-            }
-            #second-slide .content {
-                top: 10%;
-            }            
+            }          
         }
         @media only screen and (max-height : 768px) {
             .gallery-wrap {
@@ -354,9 +357,9 @@
             .formob {
                 width: 100%;
             }
-            #second-slide .content {
-                top: 7%;
-            }
+            /* #second-slide .content {
+                padding-top: 7%;
+            } */
             .main-text4 {
                 font-size: 32px;
             }
@@ -377,7 +380,7 @@
         }
         @media only screen and (max-height : 414px) {
             .content {
-                top: 10%;
+                padding-top: 10%;
             }
             .main-text1 {
                 font-size: 48px;
@@ -431,11 +434,11 @@
             }
         }
         @media only screen and (max-width : 414px) {
-            .content {
-                top: 15%;
+            #second-slide .content {
+                padding-top: 15%;
             }
             .main-text3 {
-                padding-bottom: 140px;
+                padding-bottom: 110px;
             }
             .main-text4 {
                 font-size: 25px;
@@ -481,7 +484,7 @@
         }
         @media only screen and (max-height : 375px) {
             .content {
-                top: 10%;
+                padding-top: 10%;
             }
             .main-text3 {
                 padding-bottom: 40px;
@@ -509,8 +512,8 @@
         }
 
         @media only screen and (max-width : 375px) {
-            .content {
-                top: 15%;
+            #second-slide .content {
+                padding-top: 13%;
             }
             .main-text3 {
                 padding-bottom: 60px;
@@ -521,9 +524,6 @@
         }
 
         @media only screen and (max-height : 320px) {
-            .content {
-                top: 5%;
-            }
             .main-text3 {
                 padding-bottom: 15px;
             }
@@ -546,23 +546,20 @@
             }
         }
         @media only screen and (max-width : 320px) {
-            .content {
-                top: 15%;
+            #second-slide .content {
+                padding-top: 15%;
             }
             .formob {
                 float: none;
             }
             .main-text3 {
-                padding-bottom: 90px;
+                padding-bottom: 50px;
             }
             .main-text4 {
                 font-size: 21px;
             }
             #first-slide {
                 background: url(bg.jpg) 50% 70%;
-            }
-            #second-slide .content {
-                top: 10%;
             }
             .main-textsm2 {
                 font-size: 22px;
@@ -593,13 +590,16 @@
             .main-textsm2 {
                 padding-top: 130px;
             }
+            #second-slide .content {
+                padding-top: 5%;
+            }
         }
         .circle {
             position: absolute;
-            top: -2vh;
-            left: -2vh;
-            width: 15vh;
-            height: 15vh;
+            top: -30%;
+            left: -30%;
+            width: 160%;
+            height: 160%;
             border: 1px solid #e6b111;
             border-radius: 50%;
             box-sizing: border-box;
@@ -665,21 +665,29 @@
                 transform: translateY(0);
             }
         }
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
     <div id="first-slide" class="slide">
-        <div class="close"></div>
-        <div class="content">
-            <div class="main-text1">Почему</div>
-            <div class="main-text2">57% Россиян</div>
-            <div class="main-text3">хранят сбережения в золоте?</div>
-            
-            <div class="cursor">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
+        <div class="container">
+            <div class="close"></div>
+            <div>
+                <div class="main-text1">Почему</div>
+                <div class="main-text2">57% Россиян</div>
+                <div class="main-text3">хранят сбережения в золоте?</div>
+                
+                <div class="cursor">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -723,10 +731,10 @@
     <script>
         var slide1 = document.getElementById("first-slide");
         var slide2 = document.getElementById("second-slide");
-        setTimeout(function() {
-            slide1.style.display = 'none';
-            slide2.style.display = 'block';
-        }, 7000);
+        // setTimeout(function() {
+        //     slide1.style.display = 'none';
+        //     slide2.style.display = 'block';
+        // }, 7000);
         slide1.onclick = function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
