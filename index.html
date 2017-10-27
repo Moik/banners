@@ -353,7 +353,6 @@
             }
             .formob {
                 width: 100%;
-                float: left;
             }
             #second-slide .content {
                 top: 7%;
@@ -584,6 +583,17 @@
                 width: 25%;
             }
         }
+        @media only screen and (max-width : 1024px) and (orientation : landscape) {
+            .gallery-wrap {
+                height: 145px;
+            }
+            .gallery-wrap img {
+                width: 17%;
+            }
+            .main-textsm2 {
+                padding-top: 130px;
+            }
+        }
         .circle {
             position: absolute;
             top: -2vh;
@@ -674,7 +684,7 @@
         </div>
     </div>
 
-    <div id="second-slide" class="slide">
+    <div id="second-slide" class="slide" onclick="parent.postMessage('banner.redirect', '*')">
         <div class="close"></div>
         <div class="content">
             <p class="main-text4">В магазине «Золотой монетный дом»</p>
