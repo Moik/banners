@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Bebas Neue Bold';
@@ -274,8 +275,30 @@
         max-width: 35px;
         max-height: 28px;
         vertical-align: middle;
-        }   
+        }
+        footer {
+            border-top: 1px solid #504e40;
+            background-color: #262930;
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            font-size: 15px;
+            padding: 10px 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
 
+        .main-text
+         @media only screen and (max-width : 480px) and (orientation : landscape) {
+            
+            .main-text4 {
+                font-size: 18px;
+            }
+
+        }
+            
+        
         @media only screen and (max-width : 768px) and (max-height : 1024px) {
             .main-text4 {
                 font-size: 48px;
@@ -388,11 +411,8 @@
             .main-textsm1 {
                 font-size: 16px;
             }
-            .main-textsm2 {
+            .main-textsm2, .main-text5 {
                 font-size: 22px;
-            }
-            .main-text5 {
-                font-size: 24px;
             }
             .button {
                 width: 40%;
@@ -408,6 +428,9 @@
             }
             .rightside .bottom-link {
                 min-width: 110px;
+            }
+            footer {
+                font-size: 13px;
             }
         }
         @media only screen and (max-width : 1024px) and (orientation : landscape) {
@@ -425,11 +448,67 @@
                 margin-bottom: 1vh;
                 font-size: 47px;
             }
+            .main-text4 {
+                font-size: 44px;
+            }
+            .main-textsm2, .main-text5 {
+                font-size: 32px;
+            }
+            .gallery-wrap {
+                margin: 0 auto;
+            }
         }
         @media only screen and (max-width : 1366px) and (orientation : landscape) {
-            /* #second-slide .content {
-                padding-top: 4%;
-            } */
+           
+        }
+        
+        @media only screen and (max-width : 840px) and (orientation : landscape) {
+            .bottom-link {
+                width: 47%;
+            }
+            .main-text1 {
+                font-size: 54px;
+            }
+            .main-text2, .main-text3 {
+                font-size: 34px;
+            }
+            .main-text3 {
+                padding-bottom: 50px;
+            }
+            .cursor {
+                margin-bottom: 20px;
+            }
+            .main-textsm1 {
+                font-size: 16px;
+            }
+            .main-text4 {
+                font-size: 26px;
+            }
+            .main-textsm2, .main-text5 {
+                font-size: 20px;
+            }
+            .gallery-wrap img {
+                width: 10%;
+            }
+            .button, .basket {
+                line-height: 40px;
+                font-size: 25px;
+            }
+        }
+        @media only screen and (max-width : 640px) and (orientation : landscape) {
+            
+            .main-textsm1 {
+                font-size: 14px;
+            }
+            .main-text4 {
+                font-size: 18px;
+            }
+            .main-textsm2, .main-text5 {
+                font-size: 16px;
+            }
+            footer {
+                font-size: 13px;
+            }            
         }
         .circle {
             position: absolute;
@@ -568,6 +647,10 @@
                 </div>
 
             </div>
+            <footer>
+                <p class="foottext1">ООО «Золотой монетный дом» </p>
+                <p class="foottext2">127051, Москва, пл. Сухаревская М., 6, СТР 1 ОГРН: 1097746498057</p>
+            </footer>
         </div>
     </div>
     <script>
@@ -576,7 +659,7 @@
         setTimeout(function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
-        }, 7000);
+        }, 7000000);
         slide1.onclick = function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
