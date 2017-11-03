@@ -118,7 +118,7 @@
             color: #f3b502;
             display: table;
             margin: 0 auto;
-            padding-top: 5%;
+            padding-top: 10%;
         }
         .main-textsm1 {
             padding: 0 10px;
@@ -164,72 +164,31 @@
             background: -webkit-linear-gradient(45deg, rgba(38,37,43,1) 0%,rgba(32,31,36,1) 54%,rgba(21,21,25,1) 95%,rgba(20,20,24,0.98) 100%);
             background: linear-gradient(45deg, rgba(38,37,43,1) 0%,rgba(32,31,36,1) 54%,rgba(21,21,25,1) 95%,rgba(20,20,24,0.98) 100%);
             box-sizing: border-box;
+            height: 100%;
         }
         #second-slide .content{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            height: 100vh;
-
+            height: 100%;
         }
         .gallery-wrap {
             position: relative;
             max-width: 767px;
             margin: 0 auto;
         }
-        #monet-row-1 {
-            padding-bottom: 5px;
-            width: 100%;
-            height: auto;
-        }
-        .sprite {
+        
+        .gallery-wrap img {
             display: inline-block;
-          /*  top: 0;
+            top: 0;
             width: 20%;
             height: auto;
-            margin: 0 5px; */
+            margin: 0 5px;
         }
-        .imgi1, .imgi2, .imgi3, .imgi4, .imgi5, .imgi6{
-            background: url(coints.png) no-repeat;
-            
+        #monet-row-1 {
+            padding-bottom: 10px;
         }
-
-        .imgi1{
-            background-position: -188px 0;
-            width: 165px;
-            height: 157px;
-        }
-
-        .imgi2{
-            background-position: -364px 0;
-            width: 165px;
-            height: 157px;
-        }
-        .imgi3{
-            background-position: -3px -193px;
-            width: 165px;
-            height: 160px;
-        }
-
-        .imgi4{
-            background-position: -184px -193px;
-            width: 165px;
-            height: 160px;
-        }
-
-        .imgi5{
-            background-position: -366px -193px;
-            width: 165px;
-            height: 160px;
-        }
-
-        .imgi6{
-            background-position: -548px -193px;
-            width: 165px;
-            height: 160px;
-        }
-       
         /*Логотип*/
         .logo{
         /* position:absolute; */
@@ -250,7 +209,7 @@
         .bottom-link {
         display: inline-block;
         position: relative;
-        width: 60%;
+        width: 70%;
         max-width: 240px;
         min-width: 122px;
         }
@@ -332,104 +291,33 @@
             flex: 0 0 auto;
         }
 
-        .main-text
-         @media only screen and (max-width : 480px) and (orientation : landscape) {
-            
+         @media only screen and (max-width : 600px) and (max-height : 1024px){
             .main-text4 {
-                font-size: 18px;
+                font-size: 35px;
             }
-
+            .main-textsm2, .main-text5 {
+                font-size: 36px;
+            }
         }
-            
-
-        @media only screen and (max-width : 1024px) and (orientation : landscape) {
-            .imgi1 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -76px -1px;
-                width: 74px;
-                height: 68px;
+        
+        @media only screen and (max-width : 1280px) and (orientation : landscape) {
+            .main-text4 {
+                padding-top: 0;
             }
-            .imgi2 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -147px -1px;
-                width: 74px;
-                height: 68px;
+        }   
+        @media only screen and (max-width : 768px) and (max-height : 1024px) {
+            .main-text4 {
+                font-size: 45px;
             }
-            .imgi3 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: 2px -82px;
-                width: 74px;
-                height: 68px;
+            .main-textsm1 {
+                font-size: 26px;
             }
-            .imgi4 {
-               -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -76px -81px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi5 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -149px -81px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi6 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -227px -81px;
-                width: 74px;
-                height: 68px;
+            .main-textsm2, .main-text5 {
+                font-size: 42px;
             }
         }
 
-        @media only screen and (max-width : 600px) {
-            .imgi1 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -76px -1px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi2 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -147px -1px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi3 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: 2px -82px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi4 {
-               -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -76px -81px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi5 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -149px -81px;
-                width: 74px;
-                height: 68px;
-            }
-            .imgi6 {
-                -webkit-background-size: 300px;
-                background-size: 300px;
-                background-position: -227px -81px;
-                width: 74px;
-                height: 68px;
-            }
+        @media only screen and (max-width : 500px) {
             .main-text4 {
                 font-size: 35px;
             }
@@ -551,14 +439,10 @@
                 font-size: 13px;
             }
         }
-        @media only screen and (max-width : 1280px) and (orientation : landscape) {
-            .main-text4 {
-                padding-top: 2%;
-            }
-        }
-        
         @media only screen and (max-width : 1024px) and (orientation : landscape) {
-            
+            .gallery-wrap img {
+                width: 17%;
+            }
             /* #second-slide .content {
                 padding-top: 5%;
             } */
@@ -566,15 +450,13 @@
                 font-size: 47px;
             }
             .main-text5 {
-                margin-bottom: 1vh;
                 font-size: 47px;
             }
             .main-text4 {
-                font-size: 44px;
-                padding-top: 4%;
+                font-size: 42px;
             }
             .main-textsm2, .main-text5 {
-                font-size: 32px;
+                font-size: 29px;
             }
             .gallery-wrap {
                 margin: 0 auto;
@@ -587,6 +469,12 @@
         @media only screen and (max-width : 840px) and (orientation : landscape) {
             .bottom-link {
                 width: 47%;
+            }
+            #monet-row-1 {
+                padding-bottom: 3px;
+            }
+            #monet-row-2 {
+                padding-bottom: 3px;
             }
             .main-text1 {
                 font-size: 54px;
@@ -605,6 +493,7 @@
             }
             .main-text4 {
                 font-size: 26px;
+                padding-top: 0;
             }
             .main-textsm2, .main-text5 {
                 font-size: 20px;
@@ -616,8 +505,8 @@
                 line-height: 40px;
                 font-size: 25px;
             }
-            #monet-row-1 {
-                display: none;
+            footer {
+                padding: 5px 10px;
             }
         }
         @media only screen and (max-width : 640px) and (orientation : landscape) {
@@ -633,8 +522,10 @@
             }
             footer {
                 font-size: 13px;
-            }
+            }            
         }
+        
+
         .circle {
             position: absolute;
             top: -30%;
@@ -745,14 +636,14 @@
             <p class="main-textsm1"><span class="formob">можно выгодно купить</span> золотые, серебряные, платиновые монеты и слитки</p>
             <div class="gallery-wrap">
                 <div id="monet-row-1" class="monet-gallery">
-                    <div class="imgi1 sprite"></div>
-                    <div class="imgi2 sprite"></div>
+                    <img src="1.png" alt="1">
+                    <img src="2.png" alt="2">
                 </div>
                 <div id="monet-row-2" class="monet-gallery">
-                    <div class="imgi3 sprite"></div>
-                    <div class="imgi4 sprite"></div>
-                    <div class="imgi5 sprite"></div>
-                    <div class="imgi6 sprite"></div>
+                    <img src="3.png" alt="3">
+                    <img src="4.png" alt="4">
+                    <img src="5.png" alt="5">
+                    <img src="6.png" alt="6">
                 </div>
             </div>
             <p class="main-textsm2">надежно! выгодно! ликвидно!</p>
@@ -784,7 +675,7 @@
         setTimeout(function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
-        }, 7000000);
+        }, 7000);
         slide1.onclick = function() {
             slide1.style.display = 'none';
             slide2.style.display = 'block';
